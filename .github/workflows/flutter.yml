@@ -37,10 +37,13 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.4.1"
+          ruby-version: "3.4.2"
           bundler-cache: true
           working-directory: android
+ 
 
+      - name: Install Fastlane
+        run: gem install fastlane
 
       - name: Deploy to Firebase via Fastlane
         working-directory: android
