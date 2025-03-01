@@ -99,8 +99,7 @@ jobs:
         run: bundle install
         working-directory: android
 
-      - name: Grant execute permission for gradlew
-        run: chmod +x android/gradlew
+
 
       - name: Deploy to Firebase via Fastlane
         env:
