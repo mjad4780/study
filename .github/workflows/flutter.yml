@@ -93,7 +93,7 @@ jobs:
         with:
           ruby-version: "3.4.2"
           bundler-cache: true
-          working-directory: android
+         # working-directory: android
 
       - name: Install Fastlane
         run: bundle install
@@ -104,4 +104,4 @@ jobs:
       - name: Deploy to Firebase via Fastlane
 
         run: bundle exec fastlane android deploy_to_firebase
-        working-directory: android
+        # working-directory: android
