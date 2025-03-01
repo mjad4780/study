@@ -104,3 +104,4 @@ jobs:
       - name: Deploy to Firebase via Fastlane
 
         run: bundle exec fastlane android deploy_to_firebase
+        working-directory: android
