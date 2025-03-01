@@ -3,12 +3,12 @@ name: Flutter CI/CD
 on:
   push:
     branches:
-      - publish_to_fastlane_android
+      - main
       
      
   pull_request:
     branches:
-      - publish_to_fastlane_android
+      - main
       
 
 jobs:
@@ -33,10 +33,11 @@ jobs:
       - name: Install Dependencies
         run: flutter pub get
 
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.7.0"
+          ruby-version: "3.3.6"
           bundler-cache: true
           working-directory: android
 
