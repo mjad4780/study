@@ -42,15 +42,15 @@ jobs:
           working-directory: android
  
 
-      - name: Install Fastlane
-        run: gem install fastlane
+      # - name: Install Fastlane
+      #   run: gem install fastlane
 
       - name: Deploy to Firebase via Fastlane
         working-directory: android
         
-        env:
-          FIREBASE_APP_ID: ${{ secrets.APP_ID }}
-          FIREBASE_CLI_TOKEN: ${{ secrets.FIREBASE_CLI_TOKEN }}
+        # env:
+        #   FIREBASE_APP_ID: ${{ secrets.APP_ID }}
+        #   FIREBASE_CLI_TOKEN: ${{ secrets.FIREBASE_CLI_TOKEN }}
         
         run: |
           bundle exec fastlane deploy_to_firebase
