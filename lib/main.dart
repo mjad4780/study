@@ -7,6 +7,9 @@ void main() async {
   runApp(const MyApp());
 }
 
+//  # env:
+//     #   FIREBASE_APP_ID: ${{ secrets.APP_ID }}
+//     #   FIREBASE_CLI_TOKEN: ${{ secrets.FIREBASE_CLI_TOKEN }}
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

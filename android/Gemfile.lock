@@ -5,6 +5,7 @@ GEM
       base64
       nkf
       rexml
+    abbrev (0.1.2)
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
     artifactory (3.0.17)
@@ -166,6 +167,7 @@ GEM
     json (2.10.2)
     jwt (2.10.1)
       base64
+    logger (1.6.6)
     mini_magick (4.13.2)
     mini_mime (1.1.5)
     multi_json (1.15.0)
@@ -226,8 +228,10 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  abbrev
   fastlane
   fastlane-plugin-firebase_app_distribution (~> 0.10.0)
+  logger
 
 BUNDLED WITH
    2.6.3
