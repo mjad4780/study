@@ -227,7 +227,7 @@ PLATFORMS
 
 DEPENDENCIES
   fastlane
-  fastlane-plugin-firebase_app_distribution
+  fastlane-plugin-firebase_app_distribution (~> 0.10.0)
 
 BUNDLED WITH
    2.6.3
