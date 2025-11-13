@@ -22,7 +22,7 @@ platform :android do
     sh "flutter build apk"
     firebase_app_distribution(
       app: "1:584589421450:android:946851d958720535be7673", #ENV["FIREBASE_APP_ID"].strip, # Replace with your Firebase Android app ID
-      groups: "testers",
+      groups: "tester",
       release_notes: "This Fastlane Build",
       firebase_cli_token: "1//03hKAQsnp0rG_CgYIARAAGAMSNwF-L9IrQ7faj4leDQ3dvrKk1ggbqSCFlCnhXJIotPdgNOpIa5kYlRz7vJtZvcyE10lwdDtOb38",#ENV["FIREBASE_CLI_TOKEN"].strip,
       android_artifact_path: "../build/app/outputs/flutter-apk/app-release.apk",
