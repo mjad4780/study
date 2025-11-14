@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:study/firebase_options.dart';
 
@@ -37,13 +39,6 @@ class VideoPage extends StatelessWidget {
       body: Column(
         children: [
           // الفيديو يظهر في نصف الشاشة
-          SizedBox(
-            // height: MediaQuery.of(context).size.height * 0.4,
-            child: NativeVideoView(
-              url:
-                  'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4',
-            ),
-          ),
           const Expanded(
             child: Center(
               child: Text(

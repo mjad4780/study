@@ -344,6 +344,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.2.2"
+  simple_splash_view:
+    dependency: "direct main"
+    description:
+      name: simple_splash_view
+      sha256: f5d3da22e8a2f10e141240e8f371f2479e55a1c5da830ac5dd5fb4386f489b63
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.1.17"
   sky_engine:
     dependency: transitive
     description: flutter
